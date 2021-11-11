@@ -30,7 +30,12 @@ var carousel =new Vue({
             }
         ]
     },
-    // methods: {
-    //     if(this.activeSlide === thi)
-    // }
+    methods: {
+        prevSlide: function(){
+            this.activeSlide === 0 ? this.activeSlide = this.slides.length - 1 : this.activeSlide--
+        },
+        nextSlide: function(){
+            this.activeSlide === this.slides.length - 1 ? this.activeSlide = 0 : this.activeSlide++
+        }
+    }
 })
