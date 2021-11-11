@@ -30,4 +30,7 @@ var carousel =new Vue({
             }
         ]
     },
+    // methods: {
+    //     if(this.activeSlide === thi)
+    // }
 })
